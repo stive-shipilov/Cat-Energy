@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+     <!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+     <head>
+          <!-- Заголовок страницы в браузере -->
+          <title>   Cat-Energy: Главная </title>
+          <!-- Адаптив -->
+          <!-- Подключаем CSS -->
+                    <link rel="shortcut icon" href="favicon.png" type="image/png">
+          <link rel="stylesheet" href="css/style.css" />
+          <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap" rel="stylesheet">
+          <!-- Кодировка страницы -->
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width,initial-scale=1">
+
+     </head>
+     <!-- Отображаемое тело страницы -->
+     <body class="page-index">
+        <header class="page-header wrapper">
+            <div class="page-header__wrapper">
+                <a class="page-header__logo" href="index.html">
+                        <img class="page-header__logo-image page-header__logo-image--mobile" src="img/logo-mobile.svg.png" width="33" height="38" alt="Логотип">
+                </a>
+                <a class="page-header__logo" href="index.html">
+                        <img class="page-header__logo-image page-header__logo-image--tablet" src="img/logo-desktop.svg.png" width="202" height="59" alt="Логотип">
+                </a>
+                <a class="name-company page-header__name" href="index.html">
+                        <img class="page-header__name-logo" src="img/logo-mobile-header.svg.png" width="101" height="18" alt="CAT ENERGY">
+                </a>
+                <button class="page-header__button page-header__button--closed" type="button">
+                    <span class="visually-hidden">Открыть меню</span>
+                </button>
+            </div>    
+            <nav class="main-nav main-nav--closed wrapper">         
+                <ul class="main-nav__list site-list">
+                    <li class="site-list__item">
+                        <a class="site-list__item--active" href="index.html">ГЛАВНАЯ</a>
+                        <a href="catalog.html">КАТАЛОГ ПРОДУКЦИИ</a>
+                        <a href="form.html">ПОДБОР ПРОГРАММЫ</a>
+                    </li>
+                </ul>
+            </nav>                      
+        </header>
+        <main class="page-main">
+            <h1 class="visually-hidden">Питание для кошек</h1>
+            <section class="intro">
+                <div class="intro__wrapper">
+                    <header class="intro__header wrapper">
+                            <div class="intro__header--wrapper">
+                                    <h2 class="intro__slogan">Функциональное  питание для котов</h2>
+                                    <p class="intro__subtitle">Занялся собой? Займись котом!</p>
+                                    <a class="intro__button button" href="form.html">ПОДОБРАТЬ ПРОГРАММУ</a>
+                            </div>
+                    </header>
+                </div>
+            </section>
+            <section class="features wrapper">
+                <h2 class="visually-hidden">
+                    Причины купить нашу продукцию
+                </h2>
+                <ul class="features__list">
+                    <li class="features__item features__item--losing-weight">
+                        <h3 class="features__title">ПОХУДЕНИЕ</h3>
+                        <p class="features__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+                        <a class="features__link" href="catalog.html">Каталог Slim</a>
+                    </li>
+                    <li class="features__item features__item--weight-set">
+                        <h3 class="features__title">НАБОР МАССЫ</h3>
+                        <p class="features__text">Заработать авторитет среди дворовых котов и даже собак?
+                        Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+                        <a class="features__link" href="catalog.html">Каталог pro</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="how-work wrapper">
+                <h2>Как это работает</h2>
+                <ul class="how-work__list">
+                    <li class="how-work__item">
+                        <img class="how-work__img how-work__img--1" src="img/advantage-1.png" width="60" height="60">
+                        <p class="how-work__text">Функциональное питание содержит только полезные питательные вещества.</p>
+                    </li>
+                    <li class="how-work__item">
+                        <img class="how-work__img how-work__img--2" src="img/andvantage-3.png" width="60" height="60">
+                        <p class="how-work__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+                    </li>
+                    <li class="how-work__item how-work__img--3">
+                        <img class="how-work__img" src="img/advantage-4.png" width="60" height="60">
+                        <p class="how-work__text">Замените один-два приема обычной еды на наше фунцкциональное питание.</p>
+                    </li>
+                    <li class="how-work__item how-work__img--4">
+                        <img class="how-work__img" src="img/advantage-5.png" width="60" height="60">
+                        <p class="how-work__text">Уже через месяц наслаждайтесь изменениями к лучшему 
+вашего питомца!</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="invitation invitation--index-page">
+                <div class="wrapper">
+                    <h2 class="visually-hidden">Наши контакты</h2>
+                    <ul class="invitation__list contact-list">
+                        <li class="contact-list__item">
+                            <b class="invitation__intro">приглашаем 
+                                к сотрудничеству 
+                                дилеров!
+                            </b>
+                        </li>
+                        <li class="contact-list__item">
+                            <p class="invitation__adress">
+                            ул. Большая Конюшенная, д. 19/8 
+                            Санкт-Петербург 
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <img class="invitation__map invitation__map--mobile" src="img/map-pin.png50%.png">
+                <img class="invitation__map invitation__map--tablet" src="img/map-pin.png">
+                <img class="invitation__map invitation__map--desktop" src="img/map--desktop.png">
+            </section>
+        </main>
+        <footer class="page-footer">
+            <div class="wrapper">
+            <a class="name-company page-footer__name" href="#">
+                <img class="page-footer-logo" src="img/footer-logo.svg.png" width="101" height="18" alt="CAT ENERGY">
+            </a>
+            <ul class="page-footer__list">
+                <li class="page-footer__item">
+                    <a class="page-footer__icon page-footer__icon--vk" href="#"><span class="visually-hidden">ВКОНТАКТЕ</span></a>
+                </li>
+                <li class="page-footer__item">
+                    <a class="page-footer__icon page-footer__icon--insta" href="#"><span class="visually-hidden">ИНСТАГРАММ</span></a>
+                </li>
+                <li class="page-footer__item">
+                    <a class="page-footer__icon page-footer__icon--facebook" href="#"><span class="visually-hidden">ФЭЙСБУК</span></a>
+                </li>
+            </ul>            
+            </div>
+        </footer>
+
+        <script>
+            
+            var link = document.querySelector('.page-header__button');
+            var nav = document.querySelector('.main-nav');
+
+            link.addEventListener('click', function (evt) {
+evt.preventDefault();
+link.classList.toggle('page-header__button--active');
+link.classList.toggle('page-header__button--closed');
+
+nav.classList.toggle('main-nav--active');
+nav.classList.toggle('main-nav--closed');
+            })
+        </script>
+     </body>
+</html>

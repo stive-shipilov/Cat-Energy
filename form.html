@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+     <!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+     <head>
+          <!-- Заголовок страницы в браузере -->
+          <title>   Cat-Energy: Форма оформления заказа </title>
+          <!-- Адаптив -->
+          <!-- Подключаем CSS -->
+                    <link rel="shortcut icon" href="favicon.png" type="image/png">
+          <link rel="stylesheet" href="css/style.css" />
+          <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap" rel="stylesheet">
+          <!-- Кодировка страницы -->
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width,initial-scale=1">
+          
+
+     </head>
+     <!-- Отображаемое тело страницы -->
+     <body class="page-form">
+          <header class="page-header wrapper">
+            <div class="page-header__wrapper">
+                <a class="page-header__logo" href="index.html">
+                        <img class="page-header__logo-image page-header__logo-image--mobile" src="img/logo-mobile.svg.png" width="33" height="38" alt="Логотип">
+                </a>
+                <a class="page-header__logo" href="index.html">
+                        <img class="page-header__logo-image page-header__logo-image--tablet" src="img/logo-desktop.svg.png" width="202" height="59" alt="Логотип">
+                </a>
+                <a class="name-company page-header__name" href="index.html">
+                        <img class="page-header__name-logo" src="img/logo-mobile-header.svg.png" width="101" height="18" alt="CAT ENERGY">
+                </a>
+                <button class="page-header__button page-header__button--closed" type="button">
+                    <span class="visually-hidden">Открыть меню</span>
+                </button>
+            </div>    
+            <nav class="main-nav main-nav--closed wrapper">         
+                <ul class="main-nav__list site-list">
+                    <li class="site-list__item">
+                        <a  href="index.html">ГЛАВНАЯ</a>
+                        <a  href="catalog.html">КАТАЛОГ ПРОДУКЦИИ</a>
+                        <a  class="site-list__item--active" href="form.html">ПОДБОР ПРОГРАММЫ</a>
+                    </li>
+                </ul>
+            </nav>                      
+        </header>
+        <main class="form-main">
+          <h1 class="visually-hidden">Форма заполнения заказа</h1>
+          <section class="form-main__body wrapper"> 
+               <h2 class="form-main__title">Подбор программы</h2>
+               <p class="form-main__subtitle">Заполните анкету и мы подберем 
+               программу питания для вашего кота</p>
+               <form class="form">
+                    <fieldset class="form__indicators indicators-list">
+                         <label class="indicators-list__item">
+                              ИМЯ:*
+                              <input class="indicators-list__name" type="text" name="name" placeholder="БАРСИК">                              
+                         </label>
+                         <label class="indicators-list__item">
+                              ВЕС (КГ):*
+                              <input class="indicators-list__weight" type="number" name="weight" placeholder="7">                              
+                         </label>
+                         <label class="indicators-list__item">
+                              ВОЗРАСТ (ЛЕТ):*
+                              <input class="indicators-list__old" type="number" name="old" placeholder="7">                              
+                         </label>
+                    </fieldset>
+                    <fieldset class="form__reason" >
+                      <ul class="reason-list">
+                         <li class="reason-list__item">
+                            <label class="reason-list__label" for="losing-weight">
+                            ПОХУДЕНИЕ
+                            </label>
+                            <input class="reason-list__losing-weight" id="losing-weight" type="radio" name="radio">
+                            <span class="reason-list__button"></span>   
+                          </li>
+                         
+                         <li  class="reason-list__item">
+                            <label class="reason-list__label" for="weight-set">
+                            НАБОР МАССЫ 
+                            </label>
+                            <input class="reason-list__weight-set" id="weight-set" type="radio" name="radio">
+                            <span class="reason-list__button"></span> 
+                          </li>
+                        
+                         <li class="reason-list__item">
+                            <label class="reason-list__label" for="dont-no">
+                            НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)
+                            </label>
+                            <input class="reason-list__dont-no" id="dont-no" type="radio" name="radio">
+                            <span class="reason-list__button"></span> 
+                          </li>                          
+                        </ul>
+                    </fieldset>
+                    <fieldset class="form__data data-list">
+                         <legend class="data-list__title">Контактные данные (владельцы кота)</legend>
+                         <ul class="data-list">
+                            <li class="data-list__item">
+                              <label class="data-list__label" for="email">E-MAIL:*</label>
+                              <input class="data-list__email" id="email" type="email" name="email" placeholder="kuklachev@gmail.com">  
+                            </li>                           
+                            <li class="data-list__item">
+                              <label class="data-list__label" for="phone">ТЕЛЕФОН:*</label>
+                              <input class="data-list__phone" id="phone" type="phone" name="phone" placeholder="8 (960) 900-60-90">   
+                            </li> 
+                         </ul>
+                    </fieldset>
+                    <fieldset class="form__comment comment-list">
+                         <legend class="comment-list__title">Комментарий</legend>
+                         <textarea class="comment-list__item" name="comment" rows="5" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
+                    </fieldset>
+                    <fieldset class="form__product">
+                         <legend class="product-list__title">Дополнительно</legend>
+                         <ul class="product-list">
+                            <li class="product-list__item">
+                              <label class="product-list__label" for="sugar">САХАРОЗАМЕНИТЕЛЬ</label>
+                              <input class="product-list__checkbox" id="sugar" type="checkbox" name="sugar">
+                              <span class="product-list__button"></span> 
+                            </li>       
+                            <li class="product-list__item">
+                              <label class="product-list__label" for="water">ПИТЬЕВАЯ ВОДА</label>
+                              <input class="product-list__checkbox" id="water" type="checkbox" name="water">
+                              <span class="product-list__button"></span> 
+                            </li>   
+                            <li class="product-list__item">
+                              <label class="product-list__label" for="milk">МОЛОКО</label>
+                              <input class="product-list__checkbox" id="milk" type="checkbox" name="milk">
+                              <span class="product-list__button"></span> 
+                            </li> 
+                            <li class="product-list__item"> 
+                              <label class="product-list__label" for="vitamin">ВИТАМИНЫ</label> 
+                              <input class="product-list__checkbox" id="vitamin" type="checkbox" name="vitamin">
+                              <span class="product-list__button"></span> 
+                            </li> 
+                        </ul>                        
+                    </fieldset>
+                    <ul class="button-list">
+                      <li class="button-list__item"><button class="form__button button" href="#">ОТПРАВИТЬ ЗАЯВКУ</button></li>
+                      <li class="button-list__item"> <p class="form__help">*__Обязательные поля</p></li>
+                    </ul>
+               </form>
+          </section>  
+          <section class="invitation invitation--form-page">
+                <div class="wrapper">
+                    <h2 class="visually-hidden">Наши контакты</h2>
+                    <ul class="invitation__list contact-list">
+                        <li class="contact-list__item">
+                            <b class="invitation__intro">приглашаем 
+                                к сотрудничеству 
+                                дилеров!
+                            </b>
+                        </li>
+                        <li class="contact-list__item">
+                            <p class="invitation__adress">
+                            ул. Большая Конюшенная, д. 19/8 
+                            Санкт-Петербург 
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <img class="invitation__map invitation__map--mobile" src="img/map-pin.png50%.png">
+                <img class="invitation__map invitation__map--tablet" src="img/map-pin.png">
+                <img class="invitation__map invitation__map--desktop" src="img/map--desktop.png">
+            </section>
+        </main>
+        <footer class="page-footer page-footer--form">
+            <div class="wrapper">
+            <a class="name-company page-footer__name" href="#">
+                <img class="page-footer-logo" src="img/footer-logo.svg.png" width="101" height="18" alt="CAT ENERGY">
+            </a>
+            <ul class="page-footer__list">
+                <li class="page-footer__item">
+                    <a class="page-footer__icon page-footer__icon--vk" href="#"><span class="visually-hidden">ВКОНТАКТЕ</span></a>
+                </li>
+                <li class="page-footer__item">
+                    <a class="page-footer__icon page-footer__icon--insta" href="#"><span class="visually-hidden">ИНСТАГРАММ</span></a>
+                </li>
+                <li class="page-footer__item">
+                    <a class="page-footer__icon page-footer__icon--facebook" href="#"><span class="visually-hidden">ФЭЙСБУК</span></a>
+                </li>
+            </ul>
+            </div>
+        </footer>
+        <script>
+            
+            var link = document.querySelector('.page-header__button');
+            var nav = document.querySelector('.main-nav');
+
+            link.addEventListener('click', function (evt) {
+evt.preventDefault();
+link.classList.toggle('page-header__button--active');
+link.classList.toggle('page-header__button--closed');
+
+nav.classList.toggle('main-nav--active');
+nav.classList.toggle('main-nav--closed');
+            })
+        </script>
+     </body>
+</html>
